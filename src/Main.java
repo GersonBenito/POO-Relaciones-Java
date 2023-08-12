@@ -14,11 +14,12 @@ public class Main {
         System.out.println("**** Datos Auto ********\n");
         System.out.println("Id: " + auto.getId());
         System.out.println("Marca: " + auto.getMarca());
-        System.out.println("Modelo: " + auto.getModelo() + "\n");
+        System.out.println("Modelo: " + auto.getModelo());
+        System.out.println("Cantidad propietarios: " + auto.getPropietarios().size() + "\n");
         // mostrar los propietarios
-        System.out.println("***** Datos Propeitarios *******\n");
+        System.out.println("***** Datos Propietarios *******\n");
 
-        // obner los propietarios
+        // mostrar los propietarios
         for (Propietario propietario : auto.getPropietarios()){
             System.out.println("Id: " + propietario.getId());
             System.out.println("Nombre: "+ propietario.getNombre());
@@ -28,7 +29,7 @@ public class Main {
     }
 
     /**
-     * funcion solictarDatosAuto, encargado de solictar los datos de una auto
+     * funcion solictarDatosAuto, encargado de solictar los datos de un auto
      * @return Auto con los datos necesarios para mostrarse
      */
     public static Auto solictarDatosAuto(){
